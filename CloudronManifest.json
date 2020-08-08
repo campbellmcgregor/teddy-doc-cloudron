@@ -1,0 +1,10 @@
+{
+  "id": "com.teddy.cloudron",
+  "version": "0.1.0",
+  "healthCheckPath": "/",
+  "httpPort": 8080,
+  "addons": {
+    "localstorage": {}
+  },
+  "manifestVersion": 2
+}
