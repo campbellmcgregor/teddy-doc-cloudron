@@ -43,4 +43,4 @@ COPY docs.xml /app/code/jetty/webapps/docs.xml
 RUN chown -R cloudron:cloudron /app/code && \
     chown -R cloudron:cloudron /app/data
 
-CMD ["/app/code/start.sh]
+CMD ["/app/code/start.sh"]
