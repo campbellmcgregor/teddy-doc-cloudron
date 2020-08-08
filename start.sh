@@ -1,5 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
-# CMD ["bin/jetty.sh", "run"]
 
-exec /app/code/jetty/bin/jetty.sh run
+set -eu
+
+set -x
+
+
+exec /usr/local/bin/gosu cloudron:cloudron /app/code/jetty/bin/jetty.sh run

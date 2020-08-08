@@ -40,5 +40,7 @@ RUN rm -f /app/code/jetty/lib/mail/javax.mail.glassfish-*.jar
 
 COPY docs.xml /app/code/jetty/webapps/docs.xml
 #COPY docs-web/target/docs-web-*.war /app/code/jetty/webapps/docs.war
+RUN chown -R cloudron:cloudron /app/code && \
+    chown -R cloudron:cloudron /app/data
 
 CMD ["/app/code/start.sh]
